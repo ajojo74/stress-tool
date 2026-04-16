@@ -541,10 +541,9 @@
     syncText.innerText = "FETCHING...";
 
     try {
+        
         const response = await fetch(_0x4f22 + "?action=read", {
             method: 'GET',
-            //mode: 'cors', // Explicitly set CORS mode
-            //credentials: 'include', // THIS IS KEY: It sends your Google login info
             redirect: 'follow' 
         });
 
